@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  fl_chart: ^0.70.0  # Tambahkan ini
+  pdf: ^3.10.8
+  printing: ^5.11.0
+  path_provider: ^2.1.2
   
   # Firebase
   firebase_core: ^4.3.0
