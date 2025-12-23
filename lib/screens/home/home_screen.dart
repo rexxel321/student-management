@@ -6,6 +6,8 @@ import 'package:fl_chart/fl_chart.dart'; // Import fl_chart
 import '../students/student_list_screen.dart';
 import '../teachers/teacher_list_screen.dart';
 import '../../services/database_service.dart';
+import '../students/extracurricular_screen.dart';
+import '../students/facility_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -210,6 +212,25 @@ class HomeScreen extends StatelessWidget {
                     Icons.school_outlined,
                     const Color(0xFFD946EF),
                     const TeacherListScreen()),
+                _buildMenuTile(
+                    context,
+                    "Extracurricular",
+                    "Manage sports, arts, and clubs",
+                    Icons.emoji_events_outlined,
+                    Colors.orangeAccent,
+                     ExtraScreen(), // <-- Arahkan ke class ExtraScreen tadi
+                  ),
+
+                _buildMenuTile(
+                    context,
+                    "Facility Log",
+                    "Cleaning status & OB reports",
+                    Icons.cleaning_services_outlined,
+                    Colors.greenAccent,
+                    FacilityScreen(),
+                  ),
+
+
 
                 const SizedBox(height: 24),
 
