@@ -8,7 +8,7 @@ import '../teachers/teacher_list_screen.dart';
 import '../../services/database_service.dart';
 import '../students/extracurricular_screen.dart';
 import '../students/facility_screen.dart';
-
+import '../students/attendance_screen.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -230,6 +230,14 @@ class HomeScreen extends StatelessWidget {
                     FacilityScreen(),
                   ),
 
+                _buildMenuTile(
+                    context,
+                    "Attendance",
+                    "Daily student presence report",
+                    Icons.how_to_reg, // Ikon absen
+                    Colors.cyanAccent,
+                    const AttendanceScreen(), // Arahkan ke file yang baru kita buat
+                  ),
 
 
                 const SizedBox(height: 24),
